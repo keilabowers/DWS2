@@ -1,0 +1,161 @@
+body {
+	background: url('../images/footer_lodyas.png');
+	color: white;
+	}
+
+h2 {
+	color: white;
+}
+
+.jumbotron {
+	background: url('../images/game_on.jpg') no-repeat ;
+	}
+	
+/* ---- Global Navigation ---- */
+/* Changed default text colors and bg color for navigation */
+
+.navbar-default {
+ 	background-color: #000;
+  	background:black;
+	border: none;
+	}
+	
+.navbar-default .navbar-brand {
+  color: #0097A0;
+	}
+	
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+	}
+	
+.navbar-default .navbar-text {
+  color: #0097A0;
+	}
+	
+.navbar-default .navbar-nav > li > a {
+  color: #0097A0;
+	}
+	
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+	}
+	
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #0097A0;
+  background-color: #e7e7e7;
+	}
+
+/* ---- Content ---- */
+
+/* Alternated bg colors for section/articles*/
+.content:nth-child(even) {
+	margin-top: 5%;
+	clear: both;
+	background: #0097A0;
+	overflow: auto;
+	border-radius: 5px;
+	}
+
+.content:nth-child(odd) {
+	margin-bottom: 5%;
+	clear: both;
+	overflow: hidden;
+	}
+
+section {
+	float: left;
+	width: 60%;
+	}	
+			
+article {
+	float: left;
+	width: 100%;
+	}
+	
+aside {
+	float: right;
+	width: 30%;
+	color: #000000;
+	background: #e7e7e7;
+	border-radius: 5px;
+	margin: 3.436426%;
+	padding-bottom: 3.436426%;
+	}
+
+section, article, aside {
+	padding-left: 1.030928%;
+	padding-right: 1.030928%;
+	}
+
+footer {
+	margin-top: 5%; 
+	}
+
+/* ---- Images ---- */
+/* Setting all images in Info Gallery to fit section */
+.col-md-4 img {
+	max-width: 100%;
+	max-height: 100%;
+	}
+	
+/* ---- Media queries ---- */
+
+/* once screen is smaller than a desktop it will replace the bg image with black to optimize the site and it will increase the size of the section to fit the screen */
+
+/* iPhone 4S to iPhone 6 Plus in Portrait */
+@media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 667px)
+    and (orientation: portrait) {
+    	body {
+        background: #000000;
+		}
+		section {
+		width: 100%;
+		}
+		}
+
+
+/* iPhone 4S to iPhone 6 Plus in Landscape */
+@media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 667px)
+    and (orientation: landscape) {
+    	body {
+        background: #000000;
+		}
+		section {
+		width: 100%;
+		}
+		}
+
+
+/* Tablet in portrait */
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+    	body {
+        background: #000000;
+   		}
+   		section {
+		width: 100%;
+		}
+    	}
+
+
+@media only screen
+    and (max-width: 768px) {
+    	body {
+        background: #000000;
+    	}
+		section {
+		width: 100%;
+		}
+    	}

@@ -45,7 +45,6 @@ nav ul {
 	
 }
 
-
 nav a {
 	font-family: Ariel, Verdana, sans-serif;
 	font-size: 18px;
@@ -53,17 +52,11 @@ nav a {
 	text-decoration: none;
 	}
 
-#flag {
-	width: 100%;
-	}
-	
-#flag img {
-	max-width: 100%;
-	max-height: 100%;
-	}
+ /* ---- Form ---- */
  
-
-
+ 
+ 
+ 
 
 /* ---- Media Queries ---- */
 
@@ -128,13 +121,7 @@ nav a {
 			min-width: 480px;
 			max-width: 767px;
 		}
-		.main p{
-			width: 100%;
-		}
-		td{
 
-			width: 50%;
-		}
 	}
 	
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -142,23 +129,7 @@ nav a {
 		#wrapper{
 			width: 96%;
 		}
-		figure {
-			display: none;
-		}
-		figcaption{
-			display: none;
-		}
-		.sec{
-			margin-top: 10px;
-		}
-		tr{
-			height: 44px;
-			line-height: 44px;
-		}
-		td{
-			width: 50%;
-			
-		}
+		
 	}
 
 
