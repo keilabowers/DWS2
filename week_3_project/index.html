@@ -6,125 +6,170 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Registration</title>
-	<meta id="viewport" name="viewport" content ="width=device-width" />
+	<meta id="viewport" name="viewport" content ="width=width" />
 	<link href="styles/style.css"  rel="stylesheet"  type="text/css" />
 </head>
 
 <body>
 	<div id="wrapper">
 
-		<header>
-			<h1>Germany</h1>
-		</header>
-		
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Visit</a></li>
-				<li><a href="#">History</a></li>
-				<li><a href="#">Culture</a></li>
-			</ul>			
-		</nav>
-
-		<form action="" method="post" id="registration">
-		
-		<label for="cname">Child's name:</label>
-  		<input id="cname" name="cname" type="text" placeholder="Jane Joe" required aria-required="true" >
-
-		<label for="age">Age:</label>
-  		<input id="age" name="age" type="number" min="3" max="12" placeholder="0" required aria-required="true" >		
-
-		<label for="dob">Date of Birth:</label>
-  		<input id="dob" name="dob" type="text" placeholder="MM/DD/YYY" required aria-required="true" >		
-
-		<label for="grade">Grade:</label>
-  		<input id="grade" name="grade" type="range" min="0" max="8" value="0" required aria-required="true" 
-  		onchange="showValue(this.value)"><span id="range">0</span>
-
-		<label for="male">Male:</label>
-  		<input id="male" name="gender" type="radio">		
-
-		<label for="female">Female:</label>
-  		<input id="female" name="gender" type="radio">
-  		
-		<label for="notes">Anything we can do to help your child?:</label>
-  		<input id="notes" name="notes" type="textarea">
-  		
-  		
-		<label for="pname">Parent's name:</label>
-  		<input id="pname" name="pname" type="text" placeholder="Mary Joe" required aria-required="true" >
-
-		<label for="address">Address:</label>
-  		<input id="address" name="address" type="text" placeholder="123 Nowhere St" required aria-required="true" >
-
-		<label for="city">City:</label>
-  		<input id="city" name="city" type="text" placeholder="Anywhere" required aria-required="true" >
-  		
-			<label for="state">State:</label>  
-			<input id="state" list="states">
-			<datalist id="states">
-				<select>
-					<option value="Kentucky"></option>
-					<option value="Pennsylvania"></option>
-					<option value="Ohio"></option>
-				</select>
-			</datalist>
 	
-		<label for="zip">Zip:</label>
-  		<input id="zip" name="zip" type="text" placeholder="12345" required aria-required="true" >
-  		
-		<label for="phone">Phone #:</label>
-  		<input id="phone" name="phone" type="tel" placeholder="123-456-7890" required aria-required="true" >
-
-		<label for="email">Email:</label>
-  		<input id="email" name="email" type="email" placeholder="mjoe@gmail.com" required aria-required="true" >
-  		
-  		
+		<form action="" method="post" id="registration">
+		<hgroup>
+			<h1>Dance Registration</h1>
+   			<p>Welcome! Complete the form below to sign-up for classes starting September 7, 2014.</p>
+  		</hgroup> 
 		
-  		<input id="beginners" name="course" type="checkbox">
-		<label for="beginners">Ballet + Jazz:</label>
-
-  		<input id="jazz" name="course" type="checkbox">
-		<label for="jazz">Jazz:</label>
-
-  		<input id="ballet" name="course" type="checkbox">
-		<label for="ballet">Ballet:</label>
-
-  		<input id="competition" name="course" type="checkbox">  
-  		<label for="competition">Competition:</label>
-  		
-  		
-
-		<p>Registration Fee is $25 per child</p>
-		<label for="cardname">Name on card:</label>
-  		<input id="cardname" name="cardname" type="text" placeholder="Mary Joe" required aria-required="true" >
-
-		<label for="cardnum">Card Number:</label>
-  		<input id="cardnum" name="cardnum" type="text" placeholder="1234 5678 1234 5678" required aria-required="true" >
-  		
-		<label for="exp">Exp:</label>
-  		<input id="exp" name="exp" type="text" placeholder="MM/YY" required aria-required="true" >
-
-		<label for="cvc">CVC:</label>
-  		<input id="cvc" name="cvc" type="text" placeholder="000" required aria-required="true" >
-  		
-  		
+		<fieldset>
+		<legend>Child Information</legend>
+			<div>
+			<label for="cname">Child's name:</label>
+			<input id="cname" name="cname" type="text" placeholder="Jane Joe" required aria-required="true" >
+			</div>
 		
-  		<input id="payment" name="payment" type="checkbox">
-		<label for="payment">I authorize payment</label>
+			<div>
+			<label for="age">Age:</label>
+			<input id="age" name="age" type="number" min="3" max="12" placeholder="0" required aria-required="true" >		
+			</div>
 		
-  		<input id="terms" name="terms" type="checkbox">				
-		<label for="terms">I agree to the terms and conditions</label>		
+			<div>
+			<label for="dob">Date of Birth:</label>
+			<input id="dob" name="dob" type="text" placeholder="MM/DD/YYY" required aria-required="true" >		
+			</div>
 		
+			<div>
+			<label for="grade">Grade:</label>
+			<input id="grade" name="grade" type="range" min="0" max="8" value="0" required aria-required="true" 
+			onchange="showValue(this.value)"><span id="range">0</span>
+			</div>
 
-  		<input id="register" name="register" type="submit" value="Register">
+			<div>
+			<label for="male">Male:</label>
+			<input id="male" name="gender" type="radio">		
+			</div>
+			<div>
+			<label for="female">Female:</label>
+			<input id="female" name="gender" type="radio">
+			</div>
 		
+			<div>
+			<label for="notes">Anything we can do to help your child?:</label>
+			<input id="notes" name="notes" type="textarea">
+			</div>
+		</fieldset>		
+
+		<fieldset>
+		<legend>Contact Information</legend>
+			<div>  		
+			<label for="pname">Parent's name:</label>
+			<input id="pname" name="pname" type="text" placeholder="Mary Joe" required aria-required="true" >
+			</div>
+		
+			<div>
+			<label for="address">Address:</label>
+			<input id="address" name="address" type="text" placeholder="123 Nowhere St" required aria-required="true" >
+			</div>
+		
+			<div>
+			<label for="city">City:</label>
+			<input id="city" name="city" type="text" placeholder="Anywhere" required aria-required="true" >
+			</div>
+		
+			<div>  		
+				<label for="state">State:</label>  
+				<input id="state" list="states">
+				<datalist id="states">
+					<select>
+						<option value="Kentucky"></option>
+						<option value="Pennsylvania"></option>
+						<option value="Ohio"></option>
+					</select>
+				</datalist>
+			</div>
+		
+			<div>	
+			<label for="zip">Zip:</label>
+			<input id="zip" name="zip" type="text" placeholder="12345" required aria-required="true" >
+			</div>
+		
+			<div>  		
+			<label for="phone">Phone #:</label>
+			<input id="phone" name="phone" type="tel" placeholder="123-456-7890" required aria-required="true" >
+			</div>
+		
+			<div>
+			<label for="email">Email:</label>
+			<input id="email" name="email" type="email" placeholder="mjoe@gmail.com" required aria-required="true" >
+			</div>
+		</fieldset>  		
+  
+		
+		<fieldset>
+		<legend>Select a Course</legend>		
+			<div>		
+			<input id="beginners" name="course" type="checkbox">
+			<label for="beginners">Ballet + Jazz (ages 3-4) Wednesday 530p-630p</label>
+			</div>
+		
+			<div>
+			<input id="jazz" name="course" type="checkbox">
+			<label for="jazz">Jazz (ages 5-7) Monday 630p-730p</label>
+			</div>
+		
+			<div>
+			<input id="ballet" name="course" type="checkbox">
+			<label for="ballet">Ballet (ages 5-7) Tuesday 6p-7p</label>
+			</div>
+		
+			<div>
+			<input id="competition" name="course" type="checkbox">  
+			<label for="competition">Competition (ages 8-12) Thursday 530p-730p</label>
+			</div>  
+		</fieldset>		
+  		
+
+		<fieldset>
+		<legend>Payment Information</legend>
+			<h3>Registration Fee is $25 per child</h3>
+			<div>
+			<label for="cardname">Name on card:</label>
+			<input id="cardname" name="cardname" type="text" placeholder="Mary Joe" required aria-required="true" >
+			</div>
+		
+			<div>
+			<label for="cardnum">Card Number:</label>
+			<input id="cardnum" name="cardnum" type="text" placeholder="1234 5678 1234 5678" required aria-required="true" >
+			</div>
+		
+			<div>  		
+			<label for="exp">Exp:</label>
+			<input id="exp" name="exp" type="text" placeholder="MM/YY" required aria-required="true" >
+			</div>
+		
+			<div>
+			<label for="cvc">CVC:</label>
+			<input id="cvc" name="cvc" type="text" placeholder="000" required aria-required="true" >
+			</div>
+		</fieldset>
+		  		
+  		<fieldset>
+		<legend>Authorization</legend>
+			<div>		
+			<input id="payment" name="payment" type="checkbox">
+			<label for="payment">I authorize payment</label>
+			</div>
+		
+			<div>		
+			<input id="terms" name="terms" type="checkbox">				
+			<label for="terms">I agree to the terms and conditions</label>		
+			</div>
+				
+			<div>
+			<input id="register" name="register" type="submit" value="Register">
+			</div>
+		</fieldset>
+			
 		</form>		
-		
-		
-		<footer>
-		
-		</footer>
 	
 		</div>
 		

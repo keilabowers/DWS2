@@ -1,135 +1,223 @@
 /* Keila Bowers, Student ID: 0004632583, DWS2 1503 Section 01 */
 
 body {
+	width: 100%;
 	background: #ccc;
 	margin: 0;
 	padding: 0;
 	}
 
 
-/* ---- Global Navigation ---- */
-#navbar {
-	background-color: #ccc;
-	overflow: auto;
-	top: 0;
-	left: 0;
-	right: 0;
-	}
-
-h1 { 
-	font-weight: normal;
-	font-family: Ariel, Verdana, sans-serif;
-	float: left;
-	color: rgba(255,255,255,1);
-	margin-left: 200px;
-	}
-	
-nav {
-	float: right;
-	margin-right: 200px;
-	margin-top: 15px;
-	}
-	
-nav ul {
-	text-align: right;
-	list-style-type: none;
-	}
-			
-nav li {
-	display: inline-block;
-	padding-left: 10px;
-	}
-	
-nav ul {
-	list-style: none;
-	
-}
-
-nav a {
-	font-family: Ariel, Verdana, sans-serif;
-	font-size: 18px;
-	color: rgba(255,255,255,1);
-	text-decoration: none;
-	}
 
  /* ---- Form ---- */
  
+
+form {
+	margin-top: 1%;
+	color: white;
+	clear: both;
+	float: left;
+	width: 60%;
+	margin-left: 10%;
+	} 
+	
+form div{
+	width: 100%;
+	margin-bottom: 2%; 
+	margin-left: 10%;
+  	float: left;
+	}
+	
+hgroup {
+	position: fixed;
+	top: 0;
+	right: 5%;
+	width: 20%;
+	background: gray;
+	border-radius: 5px;
+	padding: .5%;
+	color: #000;
+	font-size: 1em;
+	} 
+	
+form h3 {
+	width: 100%;
+	clear: both;
+	margin-bottom: 2%;
+	}
+	
+label {
+	width: 25%;
+	float: left;
+	}
+
+label[for="beginners"], label[for="jazz"], label[for="ballet"], label[for="competition"] {
+	width: 70%;
+	}
+
+label[for="payment"], label[for="terms"] {
+	width: 45%;
+	}
+	
+input {
+	font-size: 1em;
+	width: 45%;
+  	float: left;
+  	border: 1px solid silver;
+  	border-radius: 5px;
+  	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+  	}
  
- 
- 
+ input[type="checkbox"] {
+	width: 5%;
+	margin-right: 2%;
+	box-shadow: none;
+	} 
+
+input[type="radio"] {
+	float: left;
+	width: 5%;
+	margin-right: 2%;
+	box-shadow: none;
+	}
+
+input[type="range"] {
+	border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 1.5%;
+    width: 45%;
+    box-shadow: none;
+	}
+
+/* --- submit ---- */
+
+input[type="submit"] {
+	border: 3px solid #4B5056;
+	background: rgb(0, 151, 160);
+	transition: all 1s ease 0s;
+	}	
+
+input[type="submit"]:focus {
+	transform: scale(2.5);
+    transition: transform 375ms ease 0s;
+	}
+
+input[type="submit"]:hover {
+	color: white;
+    transition: all 1s ease 0s;
+	}
+
+input:focus {
+  border: 3px solid rgb(0, 151, 160);
+	box-shadow: none;
+	outline-style: none;
+	}	
+	
+fieldset {
+ 	margin-bottom: 2%;
+ 	border: none;	
+ 	background: rgba(0,0,0,0.75); 
+ 	border-radius: 5px;	
+ 	}
+ 	 
+legend {
+  	float: left;
+ 	font-size: 1.5em;
+ 	color: white;
+ 	border-bottom: 2px dotted #0097A0;
+ 	margin-top: 2%;
+ 	margin-bottom: 5%;	
+ 	}
+ 		
+ span#range {
+	font-size: 1.5em;
+	width: 25%;
+	color: #0097A0;
+	float: left;
+	clear: both;
+	margin-left: 10%;
+	text-align: right;
+	{
 
 /* ---- Media Queries ---- */
 
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {
-		#wrapper{
-			width:98%;
-		}	
-	}
-	
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-		#wrapper{
-			width:98%;
-
+/* iPhone 4S to iPhone 6 Plus in Portrait */
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 667px)
+    and (orientation: portrait) {
+		hgroup {
+		display: none;
 		}
-		.main figure{
-			width: 35%;
-		}
-		.main figure img{
-			width: 100%;	
-		}
-		.main p{
-			width: 60%;	
-		}
-		td{
-			width: 50%;
-		}
-	}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-		#wrapper{
-			width: 95%;
-	
-		}
-		.main, header, h2{
-			padding-left: 1%;
-			padding-right: 1%;
-		}
-		.main figure{
-			width: 100%;
-			float: right;
-		}
-		.main p{
-			width: 98%;
-		}
-		.main figure img{
-			width: 100%;
-		}
-		td{
-			width: 50%;
-		}
-	}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		#wrapper{
-			width: 98%;
-			min-width: 480px;
-			max-width: 767px;
+	#wrapper {
+    	width: 100%;
+    	}
+    	    	form {
+    	width: 100%;
+    	}
+    	form div {
+    	margin-left: 0;
+    	}
 		}
 
-	}
-	
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-		#wrapper{
-			width: 96%;
-		}
-		
-	}
 
+/* iPhone 4S to iPhone 6 Plus in Landscape */
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 667px)
+    and (orientation: landscape) {
+		hgroup {
+		display: none;
+		}
+    	#wrapper {
+    	width: 100%;
+    	}
+    	    	form {
+    	width: 100%;
+    	}
+    	form div {
+    	margin-left: 0;
+    	}
+		}
+
+
+/* Tablet in portrait */
+@media only screen
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (orientation: portrait) {
+		hgroup {
+		display: none;
+		}
+    	#wrapper {
+    	width: 100%;
+    	}
+    	    	form {
+    	width: 100%;
+    	}
+    	    	form div {
+    	margin-left: 0;
+    	}
+    	}
+
+
+@media only screen
+    and (max-width: 768px) {
+    	hgroup {
+		display: none;
+		}
+    	#wrapper {
+    	width: 100%;
+    	}
+    	form {
+    	width: 100%;
+    	}
+    	form div {
+    	margin-left: 0;
+    	}
+    	}
 
