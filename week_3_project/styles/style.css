@@ -38,6 +38,7 @@ hgroup {
 	padding: .5%;
 	color: #000;
 	font-size: 1em;
+
 	} 
 	
 form h3 {
@@ -154,6 +155,9 @@ legend {
 				hgroup{
 			display: none;
 		}
+				form {
+		width: 100%
+		}
 	}
 	
 	
@@ -167,6 +171,9 @@ legend {
 		hgroup{
 			display: none;
 		}
+				form {
+		width: 100%
+		}
 
 	}
 
@@ -178,6 +185,9 @@ legend {
 		}
 		hgroup{
 			display: none;
+		}
+				form {
+		width: 100%
 		}
 	}
 
@@ -191,6 +201,10 @@ legend {
 		hgroup{
 			display: none;
 		}
+		form {
+		width: 100%
+		}
+		
 	}
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
@@ -199,6 +213,9 @@ legend {
 		}
 		hgroup{
 			display: none;
+		}
+				form {
+		width: 100%
 		}
 	}
 
