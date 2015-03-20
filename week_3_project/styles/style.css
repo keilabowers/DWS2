@@ -150,7 +150,7 @@ legend {
     and (min-width: 320px)
     and (max-width: 667px)
     and (orientation: portrait) {
-		hgroup {
+		form hgroup {
 		display: none;
 		}
 
@@ -161,7 +161,7 @@ legend {
     and (min-width: 320px)
     and (max-width: 667px)
     and (orientation: landscape) {
-		hgroup {
+		form hgroup {
 		display: none;
 		}
 }
@@ -172,7 +172,7 @@ legend {
     and (min-width: 768px)
     and (max-width: 1024px)
     and (orientation: portrait) {
-		hgroup {
+		form hgroup {
 		display: none;
 		}
 }
@@ -180,7 +180,7 @@ legend {
 
 @media  screen
     and (max-width: 768px) {
-    	hgroup {
+    	form hgroup {
 		display: none;
 		}
 
