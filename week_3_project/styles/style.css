@@ -8,8 +8,6 @@ body {
 	clear: both;
 	}
 
-
-
  /* ---- Form ---- */
  
 
@@ -27,7 +25,7 @@ form div{
   	float: left;
 	}
 	
-hgroup {
+hgroup { /* hgroup is set to stay on the top-right corner when scrolling */
 	position: fixed;
 	top: 0;
 	right: 5%;
@@ -122,6 +120,12 @@ input[type="range"] {
     box-shadow: none;
 	}
 
+input:focus {
+  	border: 3px solid rgb(0, 151, 160);
+	box-shadow: none;
+	outline-style: none;
+	}
+	
 /* --- submit ---- */
 
 input[type="submit"] {
@@ -129,50 +133,46 @@ input[type="submit"] {
 	background: rgb(0, 151, 160);
 	transition: all 1s ease 0s;
 	}	
-
+	
+/* submit button gets larger when clicked on */
 input[type="submit"]:focus {
 	transform: scale(2.5);
     transition: transform 375ms ease 0s;
 	}
 
+/* submit button changes from black text to white on hover with transition */
 input[type="submit"]:hover {
 	color: white;
     transition: all 1s ease 0s;
 	}
 
-input:focus {
-  border: 3px solid rgb(0, 151, 160);
-	box-shadow: none;
-	outline-style: none;
-	}	
-	
+		
 
 /* ---- Media Queries ---- */
 
-
+/* On all viewports smaller than 960 it makes the form span the whole page and removes the hgroup that is fixed in desktop */
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 		#wrapper{
 			width:98%;
 		}
-				form {
+		form {
 			width: 100%;
 			margin-left: 0;
 		}
-				hgroup {
+		hgroup {
 			display:none;
 		}	
 	}
 	
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-
 		#wrapper{
 			width:98%;
 
 		}
-				form {
+		form {
 			width: 100%;
 			margin-left: 0;
 		}
@@ -202,7 +202,7 @@ input:focus {
 			min-width: 480px;
 			max-width: 767px;
 		}
-				form {
+		form {
 			width: 100%;
 			margin-left: 0;
 		}
@@ -210,12 +210,13 @@ input:focus {
 			display:none;
 		}
 	}
+	
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 		#wrapper{
 			width: 96%;
 		}
-				form {
+		form {
 			width: 100%;
 			margin-left: 0;
 		}
