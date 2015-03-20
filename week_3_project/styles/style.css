@@ -146,7 +146,7 @@ legend {
 /* ---- Media Queries ---- */
 
 /* iPhone 4S to iPhone 6 Plus in Portrait */
-@media only screen
+@media  screen
     and (min-width: 320px)
     and (max-width: 667px)
     and (orientation: portrait) {
@@ -166,7 +166,7 @@ legend {
 
 
 /* iPhone 4S to iPhone 6 Plus in Landscape */
-@media only screen
+@media  screen
     and (min-width: 320px)
     and (max-width: 667px)
     and (orientation: landscape) {
@@ -186,7 +186,7 @@ legend {
 
 
 /* Tablet in portrait */
-@media only screen
+@media  screen
     and (min-width: 768px)
     and (max-width: 1024px)
     and (orientation: portrait) {
@@ -205,7 +205,7 @@ legend {
     	}
 
 
-@media only screen
+@media  screen
     and (max-width: 768px) {
     	hgroup {
 		display: none;
