@@ -105,57 +105,70 @@ footer {
 	}
 	
 /* ---- Media queries ---- */
-
-/* once screen is smaller than a desktop it will replace the bg image with black to optimize the site and it will increase the size of the section to fit the screen */
-
-/* iPhone 4S to iPhone 6 Plus in Portrait */
+/* Media Queries */
 @media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 667px)
-    and (orientation: portrait) {
-    	body {
-        background: #000000;
-		}
-		section {
-		width: 100%;
-		}
-		}
+    and (max-width: 700px) {
+        /* Mobile size but most likely not applicable to all mobile devices */
+        
+        /* Primitive Contianers */
+        .container
+            {width: 90%;}
+        
+        /* Form Elements */
+        form
+            {padding-bottom: 20%; /* Compensates for the submit button which is fixed in position */
+            width: 90%;} /* Pull the form in a bit from the sides of the viewport */
+        form > div
+            {float: none ; /* Remove float */
+            padding: 0; /* Clear the padding */
+            width: 100%;} /* Reset the width to consume all available space */
+        .card
+            {margin: auto 1.2%;
+            width: 14.22%;} /* We'll have three 'input' elements with this class inline with eachother */
+        
+        /* Input */
+        input
+            {border: 0.1em solid #eaeaea;
+            line-height: 2em; /* Shorten input field heights */
+            margin: 4% 0;}
+            
+        input[type="submit"]
+            {background-color: #fff;
+            color: #444;
+            line-height: normal; /* Fixes an undesirable setting which pushes the text out of the button */
+            position: fixed; /* We'll have this button at the bottom of the viewport constantly */
+            bottom: 2.5%;
+            left: 25%;
+            right: 25%;
+            z-index: 1;} /* We'll also like to have this submission button above all other elements */
+        input[type="date"], input[type="file"]
+            {width: 10em ;}
+        input[type="color"]
+            {width: 5em;}
+        .submitButtonArea
+            {background-color: rgba(255,255,255,0.9); /* This will mask the space around the submission button */
+            position: fixed; /* Of course, we'd like to have this under the button, which is also fixed to the bottom */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 10%;
+            width: 100%;
+            z-index: 1;} /* We'll make sure this element displays above others and behind the submission button */
+    }
 
-
-/* iPhone 4S to iPhone 6 Plus in Landscape */
 @media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 667px)
-    and (orientation: landscape) {
-    	body {
-        background: #000000;
-		}
-		section {
-		width: 100%;
-		}
-		}
+    and (min-width: 700px)
+    and (max-width: 1500px) {
+        /* Common desktops and tablets */
+        form
+            {width: 100%;}
 
-
-/* Tablet in portrait */
-@media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (orientation: portrait) {
-    	body {
-        background: #000000;
-   		}
-   		section {
-		width: 100%;
-		}
-    	}
-
+    }
 
 @media only screen
-    and (max-width: 768px) {
-    	body {
-        background: #000000;
-    	}
-		section {
-		width: 100%;
-		}
-    	}
+    and (min-width: 1500px) {
+        /* Larger displays */
+        #wrapper
+            {width: 1500px;}
+            }
+        
